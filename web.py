@@ -19,6 +19,6 @@ for index, todo in enumerate(todos):
         st.legacy_caching.clear_cache(todo)
         st.experimental_rerun()
 
-st.text_input(label="Enter a todo", placeholder="Enter a todo...",
+st.text_input(label="", placeholder="Enter a todo...",
               on_change=add_todo, key='new_todo')
 
